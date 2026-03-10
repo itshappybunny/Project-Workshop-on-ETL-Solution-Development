@@ -11,6 +11,8 @@
 
 Доп задание 2: Анализ клиентов
 
+---
+
 **Описание логики работы Job и трансформаций**:
 
 При помощи оркестратора Job мы запускаем скачивание данных, передаем новой переменной исходный источник данных и поочередно запускаем каждую трансформацию.
@@ -18,7 +20,15 @@
 Транмация с заказами (orders) считывает данные из названной переменной выбирает определенные поля, осуществляет группировку, фильтрацию и загрузку данных в СУБД.
 Аналогичным образом работают трансформации с клиентами и продуктами (customers, products).
 
+---
 
-Настройки шагов  HTTP, Check File Exists оркестартора Job:
+**Настройки шагов  HTTP, Check File Exists оркестартора Job**:
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20095143.png)
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20095207.png)
+
+---
+
+**Реализация дедупликации**:
+![orders](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20100001.png)
+![customers](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20100038.png)
+![products](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20100054.png)
