@@ -45,3 +45,9 @@
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20100950.png)
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20101003.png)
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-10%20101014.png)
+
+---
+
+**Доп задание 1: Статистика по категориям**
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20094902.png)
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20094934.png)
