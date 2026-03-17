@@ -51,3 +51,9 @@
 **Доп задание 1: Статистика по категориям**
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20094902.png)
 ![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20094934.png)
+
+---
+
+**Доп задание 2: Анализ клиентов**
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20100223.png)
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_02/images/Screenshot%202026-03-17%20100237.png)
