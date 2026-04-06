@@ -699,3 +699,75 @@
 2026/04/07 02:40:02 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
 2026/04/07 02:40:02 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
 2026/04/07 02:40:02 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
+2026/04/07 02:48:14 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
+2026/04/07 02:48:14 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:48:14 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:48:14 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:48:14 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:48:14 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:221)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.getRowFromWorkbooks(ExcelInput.java:607)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.processRow(ExcelInput.java:426)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 02:48:14 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:48:14 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:2043)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3866)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:209)
+2026/04/07 02:48:14 - read_price_lists.0 - 	... 4 more
+2026/04/07 02:48:14 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1044)
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:1983)
+2026/04/07 02:48:14 - read_price_lists.0 - 	... 6 more
+2026/04/07 02:48:14 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:48:14 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:48:14 - read_price_lists.0 - 
+2026/04/07 02:48:14 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1037)
+2026/04/07 02:48:14 - read_price_lists.0 - 	... 7 more
+2026/04/07 02:48:14 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 02:48:14 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 02:48:14 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
