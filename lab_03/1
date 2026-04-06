@@ -1,24 +1,39 @@
--- Таблица поставщиков (100 записей)
-CREATE TABLE IF NOT EXISTS suppliers (
-    supplier_id SERIAL PRIMARY KEY,
-    supplier_name VARCHAR(100),
-    contact_person VARCHAR(100),
-    rating INT
-);
-
--- Вставка 100 записей (твой вариант с реалистичными названиями)
-INSERT INTO suppliers (supplier_name, contact_person, rating)
-SELECT 
-    (ARRAY['TechTrade', 'Global Parts', 'Oriel LLC', 'FastSupply', 'MetallCom', 'ElectroGroup', 'SpetsTech', 'MashImport', 'PromResurs', 'LogiCo'])[ceil(random()*10)] || '_' || seq,
-    (ARRAY['Иванов И.', 'Smit J.', 'Петров А.', 'Сидоров К.', 'Кузнецова М.', 'Васильев Д.', 'Lee C.', 'Brown R.', 'Волкова Е.', 'Новиков П.'])[ceil(random()*10)],
-    floor(random() * 5) + 1
-FROM generate_series(1, 100) AS seq;
-
--- Проверка количества записей
-SELECT COUNT(*) AS total_suppliers FROM suppliers;
-
--- Просмотр первых 10 записей для проверки
-SELECT * FROM suppliers LIMIT 10;
-
--- Просмотр распределения по рейтингам
-SELECT rating, COUNT(*) FROM suppliers GROUP BY rating ORDER BY rating;
+2026/04/07 01:38:15 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : Postgre_to_Mysql - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : Postgre_to_Mysql]
+2026/04/07 01:38:15 - Microsoft Excel input.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "valid_from" from cell on sheet 1, row 2, column 7: 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - v String : couldn't convert string [2024-02-13] to a date using format [yyyy/MM/dd HH:mm:ss.SSS] on offset location 4
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - v String : couldn't convert string [2024-02-13] to a date using format [yyyy/MM/dd HH:mm:ss.SSS] on offset location 4
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "valid_from" from cell on sheet 1, row 2, column 7: 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - v String : couldn't convert string [2024-02-13] to a date using format [yyyy/MM/dd HH:mm:ss.SSS] on offset location 4
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - v String : couldn't convert string [2024-02-13] to a date using format [yyyy/MM/dd HH:mm:ss.SSS] on offset location 4
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:221)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.getRowFromWorkbooks(ExcelInput.java:607)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.processRow(ExcelInput.java:426)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - v String : couldn't convert string [2024-02-13] to a date using format [yyyy/MM/dd HH:mm:ss.SSS] on offset location 4
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToDate(ValueMetaBase.java:943)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getDate(ValueMetaBase.java:2314)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3870)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:216)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	... 4 more
+2026/04/07 01:38:15 - Microsoft Excel input.0 - Caused by: java.text.ParseException: 2024-02-13
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToDate(ValueMetaBase.java:934)
+2026/04/07 01:38:15 - Microsoft Excel input.0 - 	... 7 more
+2026/04/07 01:38:15 - Microsoft Excel input.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 01:38:15 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : Postgre_to_Mysql - Transformation detected one or more steps with errors.
+2026/04/07 01:38:15 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : Postgre_to_Mysql - Transformation is killing the other steps!
