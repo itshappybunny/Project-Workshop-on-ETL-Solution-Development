@@ -1,3 +1,488 @@
+2026/04/07 00:09:51 - Spoon - Spoon
+2026/04/07 00:09:56 - Spoon - Spoon
+2026/04/07 00:10:52 - Spoon - Spoon
+2026/04/07 00:12:01 - Spoon - Spoon
+2026/04/07 00:12:14 - Spoon - Spoon
+2026/04/07 00:12:19 - Spoon - Spoon
+2026/04/07 00:12:58 - Spoon - Spoon
+2026/04/07 00:13:59 - Spoon - Spoon
+2026/04/07 00:16:00 - Spoon - Spoon
+2026/04/07 00:16:03 - Spoon - Spoon
+2026/04/07 00:16:06 - Spoon - Spoon
+2026/04/07 00:17:26 - Spoon - Save file as...
+2026/04/07 00:17:41 - Spoon - Save file as...
+2026/04/07 00:19:43 - Spoon - Spoon
+2026/04/07 00:19:53 - Spoon - Spoon
+2026/04/07 00:19:57 - Spoon - Spoon
+2026/04/07 00:20:12 - Spoon - Spoon
+2026/04/07 00:20:20 - Spoon - Spoon
+2026/04/07 00:20:23 - Spoon - Spoon
+2026/04/07 00:20:26 - Spoon - Spoon
+2026/04/07 00:20:30 - Spoon - Spoon
+2026/04/07 00:20:54 - Spoon - Spoon
+2026/04/07 00:21:21 - Spoon - Save file as...
+2026/04/07 00:21:25 - Spoon - Spoon
+2026/04/07 00:21:34 - Spoon - Spoon
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}" because it is not a file.
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1202)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1185)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.buildInputStream(DefaultFileContent.java:503)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:345)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:340)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getInputStream(CsvInputDialog.java:1133)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:55)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.open(CsvInputDialog.java:714)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.delegates.SpoonStepsDelegate.editStep(SpoonStepsDelegate.java:120)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.editStep(Spoon.java:9025)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.editStep(TransGraph.java:3286)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.mouseDoubleClick(TransGraph.java:784)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - Caused by: java.io.FileNotFoundException: /home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH} (No such file or directory)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open0(Native Method)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:107)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1198)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	... 36 more
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.NullPointerException
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.Reader.<init>(Reader.java:167)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.InputStreamReader.<init>(InputStreamReader.java:72)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getReader(CsvInputAwareStepDialog.java:143)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getBufferedReader(CsvInputAwareStepDialog.java:154)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:56)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.open(CsvInputDialog.java:714)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.delegates.SpoonStepsDelegate.editStep(SpoonStepsDelegate.java:120)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.editStep(Spoon.java:9025)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.editStep(TransGraph.java:3286)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.mouseDoubleClick(TransGraph.java:784)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:21:47 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:21:57 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : An unexpected error occurred in Spoon:  
+2026/04/07 00:21:57 - Spoon - Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:21:57 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.IllegalArgumentException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI.create(URI.java:883)
+2026/04/07 00:21:57 - Spoon - 	at org.apache.commons.vfs2.FileObject.getURI(FileObject.java:303)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.setConnection(SelectionAdapterFileDialog.java:294)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.constructFileDialogOperation(SelectionAdapterFileDialog.java:186)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelectedHelper(SelectionAdapterFileDialog.java:161)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelected(SelectionAdapterFileDialog.java:98)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:21:57 - Spoon - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:21:57 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:21:57 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:21:57 - Spoon - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:21:57 - Spoon - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:21:57 - Spoon - Caused by: java.net.URISyntaxException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI.<init>(URI.java:600)
+2026/04/07 00:21:57 - Spoon - 	at java.base/java.net.URI.create(URI.java:881)
+2026/04/07 00:21:57 - Spoon - 	... 20 more
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}" because it is not a file.
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1202)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1185)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.buildInputStream(DefaultFileContent.java:503)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:345)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:340)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getInputStream(CsvInputDialog.java:1133)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:55)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.open(CsvInputDialog.java:714)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.delegates.SpoonStepsDelegate.editStep(SpoonStepsDelegate.java:120)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.editStep(Spoon.java:9025)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.editStep(TransGraph.java:3286)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.mouseDoubleClick(TransGraph.java:784)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - Caused by: java.io.FileNotFoundException: /home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH} (No such file or directory)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open0(Native Method)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:107)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1198)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	... 36 more
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.NullPointerException
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.Reader.<init>(Reader.java:167)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.InputStreamReader.<init>(InputStreamReader.java:72)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getReader(CsvInputAwareStepDialog.java:143)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getBufferedReader(CsvInputAwareStepDialog.java:154)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:56)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.open(CsvInputDialog.java:714)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.delegates.SpoonStepsDelegate.editStep(SpoonStepsDelegate.java:120)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.editStep(Spoon.java:9025)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.editStep(TransGraph.java:3286)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.trans.TransGraph.mouseDoubleClick(TransGraph.java:784)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:200)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:22:37 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:22:41 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : An unexpected error occurred in Spoon:  
+2026/04/07 00:22:41 - Spoon - Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:22:41 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.IllegalArgumentException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI.create(URI.java:883)
+2026/04/07 00:22:41 - Spoon - 	at org.apache.commons.vfs2.FileObject.getURI(FileObject.java:303)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.setConnection(SelectionAdapterFileDialog.java:294)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.constructFileDialogOperation(SelectionAdapterFileDialog.java:186)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelectedHelper(SelectionAdapterFileDialog.java:161)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelected(SelectionAdapterFileDialog.java:98)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:22:41 - Spoon - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:22:41 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:22:41 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:22:41 - Spoon - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:22:41 - Spoon - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:22:41 - Spoon - Caused by: java.net.URISyntaxException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI.<init>(URI.java:600)
+2026/04/07 00:22:41 - Spoon - 	at java.base/java.net.URI.create(URI.java:881)
+2026/04/07 00:22:41 - Spoon - 	... 20 more
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.apache.commons.vfs2.FileNotFoundException: Could not read from "file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}" because it is not a file.
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1202)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1185)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.buildInputStream(DefaultFileContent.java:503)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.DefaultFileContent.getInputStream(DefaultFileContent.java:345)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.core.vfs.KettleVFS.getInputStream(KettleVFS.java:340)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getInputStream(CsvInputDialog.java:1133)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:55)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - Caused by: java.io.FileNotFoundException: /home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH} (No such file or directory)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open0(Native Method)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.local.LocalFile.doGetInputStream(LocalFile.java:107)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.apache.commons.vfs2.provider.AbstractFileObject.getInputStream(AbstractFileObject.java:1198)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	... 25 more
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error getting file description
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.NullPointerException
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.Reader.<init>(Reader.java:167)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.io.InputStreamReader.<init>(InputStreamReader.java:72)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getReader(CsvInputAwareStepDialog.java:143)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getBufferedReader(CsvInputAwareStepDialog.java:154)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:56)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:23:55 - org.pentaho.di.trans.steps.csvinput.CsvInputMeta@4fd37449 - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:23:55 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : An unexpected error occurred in Spoon:  
+2026/04/07 00:23:55 - Spoon - null
+2026/04/07 00:23:55 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.NullPointerException
+2026/04/07 00:23:55 - Spoon - 	at java.base/java.io.Reader.<init>(Reader.java:167)
+2026/04/07 00:23:55 - Spoon - 	at java.base/java.io.BufferedReader.<init>(BufferedReader.java:101)
+2026/04/07 00:23:55 - Spoon - 	at java.base/java.io.BufferedReader.<init>(BufferedReader.java:116)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.trans.steps.fileinput.text.BufferedInputStreamReader.<init>(BufferedInputStreamReader.java:36)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getBufferedReader(CsvInputAwareStepDialog.java:154)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.step.common.CsvInputAwareStepDialog.getFieldNames(CsvInputAwareStepDialog.java:56)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:946)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog.getFieldNames(CsvInputDialog.java:109)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:116)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.step.common.GetFieldsCapableStepDialog.getFields(GetFieldsCapableStepDialog.java:111)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.trans.steps.csvinput.CsvInputDialog$10.handleEvent(CsvInputDialog.java:648)
+2026/04/07 00:23:55 - Spoon - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:23:55 - Spoon - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:23:55 - Spoon - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:23:55 - Spoon - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:23:55 - Spoon - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:23:55 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:23:55 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:23:55 - Spoon - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:23:55 - Spoon - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:23:55 - Spoon - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:24:05 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : An unexpected error occurred in Spoon:  
+2026/04/07 00:24:05 - Spoon - Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:05 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.IllegalArgumentException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI.create(URI.java:883)
+2026/04/07 00:24:05 - Spoon - 	at org.apache.commons.vfs2.FileObject.getURI(FileObject.java:303)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.setConnection(SelectionAdapterFileDialog.java:294)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.constructFileDialogOperation(SelectionAdapterFileDialog.java:186)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelectedHelper(SelectionAdapterFileDialog.java:161)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelected(SelectionAdapterFileDialog.java:98)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:24:05 - Spoon - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:24:05 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:24:05 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:24:05 - Spoon - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:24:05 - Spoon - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:24:05 - Spoon - Caused by: java.net.URISyntaxException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI.<init>(URI.java:600)
+2026/04/07 00:24:05 - Spoon - 	at java.base/java.net.URI.create(URI.java:881)
+2026/04/07 00:24:05 - Spoon - 	... 20 more
+2026/04/07 00:24:57 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : An unexpected error occurred in Spoon:  
+2026/04/07 00:24:57 - Spoon - Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:57 - Spoon - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : java.lang.IllegalArgumentException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI.create(URI.java:883)
+2026/04/07 00:24:57 - Spoon - 	at org.apache.commons.vfs2.FileObject.getURI(FileObject.java:303)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.setConnection(SelectionAdapterFileDialog.java:294)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.constructFileDialogOperation(SelectionAdapterFileDialog.java:186)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelectedHelper(SelectionAdapterFileDialog.java:161)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.core.events.dialog.SelectionAdapterFileDialog.widgetSelected(SelectionAdapterFileDialog.java:98)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5797)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1374)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5051)
+2026/04/07 00:24:57 - Spoon - 	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4583)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.readAndDispatch(Spoon.java:1432)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.waitForDispose(Spoon.java:8160)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.start(Spoon.java:9542)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.di.ui.spoon.Spoon.main(Spoon.java:722)
+2026/04/07 00:24:57 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2026/04/07 00:24:57 - Spoon - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2026/04/07 00:24:57 - Spoon - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2026/04/07 00:24:57 - Spoon - 	at org.pentaho.commons.launcher.Launcher.main(Launcher.java:92)
+2026/04/07 00:24:57 - Spoon - Caused by: java.net.URISyntaxException: Illegal character in path at index 72: file:///home/dev/Downloads/lab_etl/pdi-ce-9.4.0.0-343/data-integration/${CSV_FILE_PATH}
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI$Parser.fail(URI.java:2913)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI$Parser.checkChars(URI.java:3084)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3166)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI$Parser.parse(URI.java:3114)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI.<init>(URI.java:600)
+2026/04/07 00:24:57 - Spoon - 	at java.base/java.net.URI.create(URI.java:881)
+2026/04/07 00:24:57 - Spoon - 	... 20 more
+2026/04/07 02:27:29 - Spoon - Save file as...
+2026/04/07 02:29:42 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
+2026/04/07 02:29:42 - read_suppliers_from_postgres.0 - Finished reading query, closing connection
+2026/04/07 02:29:42 - dummy.0 - Finished processing (I=0, O=0, R=100, W=100, U=0, E=0)
+2026/04/07 02:29:42 - read_suppliers_from_postgres.0 - Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026/04/07 02:34:07 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
+2026/04/07 02:34:07 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:34:07 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:34:07 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:34:07 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:34:07 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:221)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.getRowFromWorkbooks(ExcelInput.java:607)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.processRow(ExcelInput.java:426)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 02:34:07 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:34:07 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:2043)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3866)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:209)
+2026/04/07 02:34:07 - read_price_lists.0 - 	... 4 more
+2026/04/07 02:34:07 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1044)
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:1983)
+2026/04/07 02:34:07 - read_price_lists.0 - 	... 6 more
+2026/04/07 02:34:07 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:34:07 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:34:07 - read_price_lists.0 - 
+2026/04/07 02:34:07 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1037)
+2026/04/07 02:34:07 - read_price_lists.0 - 	... 7 more
+2026/04/07 02:34:07 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 02:34:07 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 02:34:07 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
 2026/04/07 02:34:30 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
 2026/04/07 02:34:30 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
 2026/04/07 02:34:30 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
@@ -70,3 +555,147 @@
 2026/04/07 02:34:30 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
 2026/04/07 02:34:30 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
 2026/04/07 02:34:30 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
+2026/04/07 02:37:46 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
+2026/04/07 02:37:46 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:37:46 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:37:46 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:37:46 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:37:46 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:221)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.getRowFromWorkbooks(ExcelInput.java:607)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.processRow(ExcelInput.java:426)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 02:37:46 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:37:46 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:2043)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3866)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:209)
+2026/04/07 02:37:46 - read_price_lists.0 - 	... 4 more
+2026/04/07 02:37:46 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1044)
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:1983)
+2026/04/07 02:37:46 - read_price_lists.0 - 	... 6 more
+2026/04/07 02:37:46 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:37:46 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:37:46 - read_price_lists.0 - 
+2026/04/07 02:37:46 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1037)
+2026/04/07 02:37:46 - read_price_lists.0 - 	... 7 more
+2026/04/07 02:37:46 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 02:37:46 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 02:37:46 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
+2026/04/07 02:40:01 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Dispatching started for transformation [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions]
+2026/04/07 02:40:02 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Error processing row from Excel file [/home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/price_lists.xlsx] : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:40:02 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:40:02 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.trans.steps.excelinput.KettleCellValueException: Cannot convert field "price_usd" from cell on sheet 1, row 2, column 4: 
+2026/04/07 02:40:02 - read_price_lists.0 - org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:40:02 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:221)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.getRowFromWorkbooks(ExcelInput.java:607)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.processRow(ExcelInput.java:426)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 02:40:02 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:40:02 - read_price_lists.0 - Unexpected conversion error while converting value [v String] to a Number
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:2043)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertData(ValueMetaBase.java:3866)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.trans.steps.excelinput.ExcelInput.fillRow(ExcelInput.java:209)
+2026/04/07 02:40:02 - read_price_lists.0 - 	... 4 more
+2026/04/07 02:40:02 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1044)
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.getNumber(ValueMetaBase.java:1983)
+2026/04/07 02:40:02 - read_price_lists.0 - 	... 6 more
+2026/04/07 02:40:02 - read_price_lists.0 - Caused by: org.pentaho.di.core.exception.KettleValueException: 
+2026/04/07 02:40:02 - read_price_lists.0 - v String : couldn't convert String to number : non-numeric character found at position 1 for value [Электроника]
+2026/04/07 02:40:02 - read_price_lists.0 - 
+2026/04/07 02:40:02 - read_price_lists.0 - 	at org.pentaho.di.core.row.value.ValueMetaBase.convertStringToNumber(ValueMetaBase.java:1037)
+2026/04/07 02:40:02 - read_price_lists.0 - 	... 7 more
+2026/04/07 02:40:02 - read_price_lists.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 02:40:02 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 02:40:02 - /home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/Postgre_to_Mysql.ktr : load_dimensions - Transformation is killing the other steps!
