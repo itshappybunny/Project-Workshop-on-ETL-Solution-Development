@@ -1,0 +1,31 @@
+2026/04/07 08:17:22 - Spoon - Transformation opened.
+2026/04/07 08:17:22 - Spoon - Launching transformation [load_dimensions]...
+2026/04/07 08:17:22 - Spoon - Started the transformation execution.
+2026/04/07 08:17:22 - load_dimensions - Dispatching started for transformation [load_dimensions]
+2026/04/07 08:17:23 - write_dim_products.0 - Connected to database [MySQL_Target] (commit=500)
+2026/04/07 08:17:23 - write_fact_table.0 - Connected to database [MySQL_Target] (commit=1000)
+2026/04/07 08:17:23 - write_dim_suppliers.0 - Connected to database [MySQL_Target] (commit=500)
+2026/04/07 08:17:23 - read_purchase_history.0 - Header row skipped in file 'file:///home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/purchase_history.csv'
+2026/04/07 08:17:23 - merge_with_suppliers.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2026/04/07 08:17:23 - merge_with_suppliers.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleException: 
+2026/04/07 08:17:23 - merge_with_suppliers.0 - Unable to find specified source step with name 'sort_suppliers_by_id'.
+2026/04/07 08:17:23 - merge_with_suppliers.0 - 
+2026/04/07 08:17:23 - merge_with_suppliers.0 - 	at org.pentaho.di.trans.steps.mergejoin.MergeJoin.processRow(MergeJoin.java:90)
+2026/04/07 08:17:23 - merge_with_suppliers.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 08:17:23 - merge_with_suppliers.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 08:17:23 - merge_with_suppliers.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 08:17:23 - load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 08:17:23 - load_dimensions - Transformation is killing the other steps!
+2026/04/07 08:17:23 - read_purchase_history.0 - Finished processing (I=1682, O=0, R=0, W=1680, U=0, E=0)
+2026/04/07 08:17:23 - read_dim_suppliers_from_mysql.0 - Finished reading query, closing connection
+2026/04/07 08:17:23 - read_dim_products_from_mysql.0 - Finished reading query, closing connection
+2026/04/07 08:17:23 - read_dim_products_from_mysql.0 - Finished processing (I=2, O=0, R=0, W=0, U=0, E=0)
+2026/04/07 08:17:23 - sort_history_by_product.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=0)
+2026/04/07 08:17:23 - read_suppliers_from_postgres.0 - Finished reading query, closing connection
+2026/04/07 08:17:23 - read_dim_suppliers_from_mysql.0 - Finished processing (I=2, O=0, R=0, W=0, U=0, E=0)
+2026/04/07 08:17:23 - read_suppliers_from_postgres.0 - Finished processing (I=2, O=0, R=0, W=0, U=0, E=0)
+2026/04/07 08:17:23 - read_price_lists.0 - Finished processing (I=1, O=0, R=0, W=0, U=0, E=0)
+2026/04/07 08:17:23 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 08:17:23 - Spoon - The transformation has finished!!
+2026/04/07 08:17:23 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 08:17:23 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
