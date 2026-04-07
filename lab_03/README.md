@@ -8,4 +8,18 @@
 
 
 **Цель работы**: Разработать комплексное ETL-решение для интеграции данных из локальной СУБД PostgreSQL и файловых источников (CSV/Excel) в целевое хранилище MySQL. Спроектировать верхнеуровневую архитектуру аналитического решения.
+![Архитектура](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/architecture.png)
+![Источники](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-06%20224332.png)
 
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20095843.png)
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20095807.png)
+
+![Трансформация](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20094941.png)
+
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20095039.png)
+
+
+**Итоговые таблицы**
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20082449.png)
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20082435.png)
+![](https://github.com/itshappybunny/Project-Workshop-on-ETL-Solution-Development/blob/main/lab_03/images/Screenshot%202026-04-07%20095422.png)
