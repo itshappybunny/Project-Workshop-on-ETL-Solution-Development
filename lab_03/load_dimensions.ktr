@@ -704,10 +704,10 @@
         <rightvalue/>
         <value>
           <name>constant</name>
-          <type>Number</type>
-          <text>0.0</text>
+          <type>Integer</type>
+          <text>0</text>
           <length>-1</length>
-          <precision>-1</precision>
+          <precision>0</precision>
           <isnull>N</isnull>
           <mask>####0.0#########;-####0.0#########</mask>
         </value>
@@ -1169,7 +1169,7 @@
 	product_name,
 	category
 FROM dim_products;</sql>
-    <limit>0</limit>
+    <limit>1000</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
@@ -1300,7 +1300,7 @@ FROM dim_products;</sql>
 	supplier_name,
 	rating
 FROM dim_suppliers</sql>
-    <limit>0</limit>
+    <limit>1000</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
@@ -1313,7 +1313,7 @@ FROM dim_suppliers</sql>
         <name>supplier_id</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>read_dim_suppliers_from_mysql</origin>
         <comments>supplier_id</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1336,7 +1336,7 @@ FROM dim_suppliers</sql>
         <name>supplier_name</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>read_dim_suppliers_from_mysql</origin>
         <comments>supplier_name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
@@ -1359,7 +1359,7 @@ FROM dim_suppliers</sql>
         <name>rating</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>read_dim_suppliers_from_mysql</origin>
         <comments>rating</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1411,7 +1411,7 @@ FROM dim_suppliers</sql>
     <rownumfield/>
     <sheetfield/>
     <filefield/>
-    <limit>0</limit>
+    <limit>1000</limit>
     <encoding/>
     <add_to_result_filenames>Y</add_to_result_filenames>
     <accept_filenames>N</accept_filenames>
@@ -1639,7 +1639,7 @@ FROM dim_suppliers</sql>
 	contact_person,
 	rating
 FROM suppliers;</sql>
-    <limit>1000</limit>
+    <limit>0</limit>
     <lookup/>
     <execute_each_row>N</execute_each_row>
     <variables_active>N</variables_active>
@@ -1652,7 +1652,7 @@ FROM suppliers;</sql>
         <name>supplier_id</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>read_suppliers_from_postgres</origin>
         <comments>supplier_id</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1675,7 +1675,7 @@ FROM suppliers;</sql>
         <name>supplier_name</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>read_suppliers_from_postgres</origin>
         <comments>supplier_name</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
@@ -1698,7 +1698,7 @@ FROM suppliers;</sql>
         <name>contact_person</name>
         <length>100</length>
         <precision>-1</precision>
-        <origin>Table input</origin>
+        <origin>read_suppliers_from_postgres</origin>
         <comments>contact_person</comments>
         <conversion_Mask/>
         <decimal_symbol>.</decimal_symbol>
@@ -1721,7 +1721,7 @@ FROM suppliers;</sql>
         <name>rating</name>
         <length>9</length>
         <precision>0</precision>
-        <origin>Table input</origin>
+        <origin>read_suppliers_from_postgres</origin>
         <comments>rating</comments>
         <conversion_Mask>####0;-####0</conversion_Mask>
         <decimal_symbol>.</decimal_symbol>
@@ -1935,7 +1935,7 @@ FROM suppliers;</sql>
     <connection>MySQL_Target</connection>
     <schema/>
     <table>dim_products</table>
-    <commit>500</commit>
+    <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
     <use_batch>Y</use_batch>
@@ -1995,7 +1995,7 @@ FROM suppliers;</sql>
     <connection>MySQL_Target</connection>
     <schema/>
     <table>dim_suppliers</table>
-    <commit>500</commit>
+    <commit>1000</commit>
     <truncate>Y</truncate>
     <ignore_errors>N</ignore_errors>
     <use_batch>Y</use_batch>
