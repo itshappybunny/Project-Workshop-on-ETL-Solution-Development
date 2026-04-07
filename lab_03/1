@@ -1,57 +1,78 @@
-2026/04/07 09:21:33 - Spoon - Transformation opened.
-2026/04/07 09:21:33 - Spoon - Launching transformation [load_dimensions]...
-2026/04/07 09:21:33 - Spoon - Started the transformation execution.
-2026/04/07 09:21:33 - load_dimensions - Dispatching started for transformation [load_dimensions]
-2026/04/07 09:21:33 - write_dim_suppliers.0 - Connected to database [MySQL_Target] (commit=1000)
-2026/04/07 09:21:33 - write_fact_table.0 - Connected to database [MySQL_Target] (commit=1000)
-2026/04/07 09:21:33 - write_dim_products.0 - Connected to database [MySQL_Target] (commit=1000)
-2026/04/07 09:21:34 - read_purchase_history.0 - Header row skipped in file 'file:///home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/purchase_history.csv'
-2026/04/07 09:21:34 - read_suppliers_from_postgres.0 - Finished reading query, closing connection
-2026/04/07 09:21:34 - read_dim_suppliers_from_mysql.0 - Finished reading query, closing connection
-2026/04/07 09:21:34 - fix_suppliers_by_id.0 - Finished processing (I=0, O=0, R=100, W=100, U=0, E=0)
-2026/04/07 09:21:34 - read_suppliers_from_postgres.0 - Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
-2026/04/07 09:21:34 - read_dim_suppliers_from_mysql.0 - Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
-2026/04/07 09:21:34 - sort_suppliers_by_id.0 - Finished processing (I=0, O=0, R=100, W=100, U=0, E=0)
-2026/04/07 09:21:34 - read_dim_products_from_mysql.0 - Finished reading query, closing connection
-2026/04/07 09:21:34 - sort_products_by_id.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
-2026/04/07 09:21:34 - read_dim_products_from_mysql.0 - Finished processing (I=500, O=0, R=0, W=500, U=0, E=0)
-2026/04/07 09:21:34 - read_purchase_history.0 - Finished processing (I=10001, O=0, R=0, W=10000, U=0, E=0)
-2026/04/07 09:21:34 - sort_history_by_product.0 - Finished processing (I=0, O=0, R=10000, W=10000, U=0, E=0)
-2026/04/07 09:21:35 - merge_history_products.0 - Finished processing (I=0, O=0, R=10500, W=573, U=0, E=0)
-2026/04/07 09:21:35 - sort_joined_by_supplier.0 - Finished processing (I=0, O=0, R=573, W=573, U=0, E=0)
-2026/04/07 09:21:35 - merge_with_suppliers.0 - Finished processing (I=0, O=0, R=673, W=573, U=0, E=0)
-2026/04/07 09:21:35 - Calculator.0 - Finished processing (I=0, O=0, R=573, W=573, U=0, E=0)
-2026/04/07 09:21:35 - write_dim_suppliers.0 - Finished processing (I=0, O=100, R=100, W=100, U=0, E=0)
-2026/04/07 09:21:35 - read_price_lists.0 - Finished processing (I=1000, O=0, R=0, W=1000, U=0, E=0)
-2026/04/07 09:21:37 - write_dim_products.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
-2026/04/07 09:21:37 - write_dim_products.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
-2026/04/07 09:21:37 - write_dim_products.0 - Couldn't execute SQL: DELETE FROM dim_products
-2026/04/07 09:21:37 - write_dim_products.0 - 
-2026/04/07 09:21:37 - write_dim_products.0 - Deadlock found when trying to get lock; try restarting transaction
-2026/04/07 09:21:37 - write_dim_products.0 - 
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1572)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1522)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.truncateTable(Database.java:3311)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.truncateTable(TableOutput.java:567)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.processRow(TableOutput.java:86)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
-2026/04/07 09:21:37 - write_dim_products.0 - Caused by: com.mysql.cj.jdbc.exceptions.MySQLTransactionRollbackException: Deadlock found when trying to get lock; try restarting transaction
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:123)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:634)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:418)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.createResultSetUsingServerFetch(StatementImpl.java:570)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:704)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
-2026/04/07 09:21:37 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1547)
-2026/04/07 09:21:37 - write_dim_products.0 - 	... 6 more
-2026/04/07 09:21:37 - write_dim_products.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
-2026/04/07 09:21:37 - load_dimensions - Transformation detected one or more steps with errors.
-2026/04/07 09:21:37 - load_dimensions - Transformation is killing the other steps!
-2026/04/07 09:21:39 - write_fact_table.0 - Finished processing (I=0, O=573, R=573, W=0, U=0, E=0)
-2026/04/07 09:21:39 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
-2026/04/07 09:21:39 - Spoon - The transformation has finished!!
-2026/04/07 09:21:39 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
-2026/04/07 09:21:39 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 09:40:44 - Spoon - Transformation opened.
+2026/04/07 09:40:44 - Spoon - Launching transformation [load_dimensions]...
+2026/04/07 09:40:44 - Spoon - Started the transformation execution.
+2026/04/07 09:40:44 - load_dimensions - Dispatching started for transformation [load_dimensions]
+2026/04/07 09:40:44 - write_dim_products.0 - Connected to database [MySQL_Target] (commit=1000)
+2026/04/07 09:40:44 - write_fact_table.0 - Connected to database [MySQL_Target] (commit=1000)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - Connected to database [MySQL_Target] (commit=1000)
+2026/04/07 09:40:44 - read_purchase_history.0 - Header row skipped in file 'file:///home/dev/Downloads/lab_etl/data_for_labs/lab_csvexl_to_mysql/datain/purchase_history.csv'
+2026/04/07 09:40:44 - read_dim_suppliers_from_mysql.0 - Finished reading query, closing connection
+2026/04/07 09:40:44 - read_dim_suppliers_from_mysql.0 - Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026/04/07 09:40:44 - fix_suppliers_by_id.0 - Finished processing (I=0, O=0, R=100, W=100, U=0, E=0)
+2026/04/07 09:40:44 - sort_suppliers_by_id.0 - Finished processing (I=0, O=0, R=100, W=100, U=0, E=0)
+2026/04/07 09:40:44 - read_dim_products_from_mysql.0 - Finished reading query, closing connection
+2026/04/07 09:40:44 - read_suppliers_from_postgres.0 - Finished reading query, closing connection
+2026/04/07 09:40:44 - read_suppliers_from_postgres.0 - Finished processing (I=100, O=0, R=0, W=100, U=0, E=0)
+2026/04/07 09:40:44 - sort_products_by_id.0 - Finished processing (I=0, O=0, R=500, W=500, U=0, E=0)
+2026/04/07 09:40:44 - read_dim_products_from_mysql.0 - Finished processing (I=500, O=0, R=0, W=500, U=0, E=0)
+2026/04/07 09:40:44 - read_purchase_history.0 - Finished processing (I=10001, O=0, R=0, W=10000, U=0, E=0)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2026/04/07 09:40:44 - write_dim_suppliers.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2026/04/07 09:40:44 - write_dim_suppliers.0 - Couldn't execute SQL: DELETE FROM dim_suppliers
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 
+2026/04/07 09:40:44 - write_dim_suppliers.0 - Cannot delete or update a parent row: a foreign key constraint fails (`mgpu_ico_etl_11`.`fact_purchase_analysis`, CONSTRAINT `fact_purchase_analysis_ibfk_1` FOREIGN KEY (`supplier_id`) REFERENCES `dim_suppliers` (`supplier_id`))
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1572)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1522)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.core.database.Database.truncateTable(Database.java:3311)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.truncateTable(TableOutput.java:567)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.processRow(TableOutput.java:86)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mgpu_ico_etl_11`.`fact_purchase_analysis`, CONSTRAINT `fact_purchase_analysis_ibfk_1` FOREIGN KEY (`supplier_id`) REFERENCES `dim_suppliers` (`supplier_id`))
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:634)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:418)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.StatementImpl.createResultSetUsingServerFetch(StatementImpl.java:570)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:704)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1547)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - 	... 6 more
+2026/04/07 09:40:44 - sort_history_by_product.0 - Finished processing (I=0, O=0, R=10000, W=0, U=0, E=0)
+2026/04/07 09:40:44 - write_dim_suppliers.0 - Finished processing (I=0, O=0, R=1, W=0, U=0, E=1)
+2026/04/07 09:40:44 - load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 09:40:44 - load_dimensions - Transformation is killing the other steps!
+2026/04/07 09:40:44 - write_dim_products.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Unexpected error
+2026/04/07 09:40:44 - write_dim_products.0 - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : org.pentaho.di.core.exception.KettleDatabaseException: 
+2026/04/07 09:40:44 - write_dim_products.0 - Couldn't execute SQL: DELETE FROM dim_products
+2026/04/07 09:40:44 - write_dim_products.0 - 
+2026/04/07 09:40:44 - write_dim_products.0 - Cannot delete or update a parent row: a foreign key constraint fails (`mgpu_ico_etl_11`.`fact_purchase_analysis`, CONSTRAINT `fact_purchase_analysis_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `dim_products` (`product_id`))
+2026/04/07 09:40:44 - write_dim_products.0 - 
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1572)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1522)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.truncateTable(Database.java:3311)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.truncateTable(TableOutput.java:567)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.trans.steps.tableoutput.TableOutput.processRow(TableOutput.java:78)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.trans.step.RunThread.run(RunThread.java:62)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at java.base/java.lang.Thread.run(Thread.java:829)
+2026/04/07 09:40:44 - write_dim_products.0 - Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`mgpu_ico_etl_11`.`fact_purchase_analysis`, CONSTRAINT `fact_purchase_analysis_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `dim_products` (`product_id`))
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:634)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:418)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.createResultSetUsingServerFetch(StatementImpl.java:570)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:704)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+2026/04/07 09:40:44 - write_dim_products.0 - 	at org.pentaho.di.core.database.Database.execStatement(Database.java:1547)
+2026/04/07 09:40:44 - write_dim_products.0 - 	... 6 more
+2026/04/07 09:40:45 - write_dim_products.0 - Finished processing (I=0, O=0, R=0, W=0, U=0, E=1)
+2026/04/07 09:40:45 - read_price_lists.0 - Finished processing (I=1, O=0, R=0, W=0, U=0, E=0)
+2026/04/07 09:40:45 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 09:40:45 - Spoon - The transformation has finished!!
+2026/04/07 09:40:45 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 09:40:45 - load_dimensions - ERROR (version 9.4.0.0-343, build 0.0 from 2022-11-08 07.50.27 by buildguy) : Errors detected!
+2026/04/07 09:40:45 - load_dimensions - Transformation detected one or more steps with errors.
+2026/04/07 09:40:45 - load_dimensions - Transformation is killing the other steps!
